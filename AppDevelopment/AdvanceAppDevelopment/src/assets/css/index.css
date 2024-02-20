@@ -73,3 +73,8 @@ button:focus-visible {
   box-sizing: border-box;
   user-select: none;
 }
+
+body, html {
+  width : 100lvw;
+  height : 100lvh
+}
