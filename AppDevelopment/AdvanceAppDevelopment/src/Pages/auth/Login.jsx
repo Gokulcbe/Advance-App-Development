@@ -21,11 +21,11 @@ function Login() {
         event.preventDefault();
       };
     return (
-        <>
+        <div className="container">
         <video className="video-bg" autoPlay loop muted>
             <source src="/src/assets/Videos/videoplayback.webm" type="video/mp4" />
         </video>
-        <div className='login' style={{marginTop: '8%'}}>
+        <div className='login'>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 1 }}>
                 <Grid item xs={12} sm={6} style={{minWidth: '300px'}}>
                 <img style={{height: '100%', width: '100%'}} src="/src/assets/Images/boat2.jpg" alt="Description of the image" />
@@ -42,10 +42,16 @@ function Login() {
                             </div>
                         <div >
                             <div className="loginform">
-                                <div className="border border-dark pb-3 rounded-lg" style={{width: "100%"}}>
-                                    <div className="text-center p-1 mb-2 text-light " style={{background: "#016b7a", padding: '10px'}}>
-                                        <h2>Sign In</h2>
-                                        <h4>Its Quick and Easy</h4>
+                                <div className="border border-dark pb-3 rounded-lg" style={{width: "100%" }}>
+                                    <div className="text-center p-1 mb-2 text-light " >
+                                        <div className="notice">
+                                        <div>
+                                            <h2>Sign In</h2>
+                                        </div>
+                                        <div>
+                                            <h4>Its Quick and Easy</h4>
+                                        </div>
+                                        </div>
                                     </div>
                             <form id="logf">
                             <div className="form-group ml-3 mr-1">
@@ -103,7 +109,7 @@ function Login() {
         </Grid>
         </Grid>
         </div>
-        </>
+        </div>
     )
 }
 

@@ -15,12 +15,19 @@ body{
   z-index: -1; /* Ensure the video is behind other content */
   opacity: 0.7; /* Adjust opacity if needed */
 }
-.login {
+/* .login {
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
   
+} */
+.container{
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  align-content: 'center';
+  min-height: '100vh';
 }
 .card-header:first-child {
     border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
@@ -46,6 +53,7 @@ body{
     background-color: #d6c4c4;
     background-clip: border-box;
     border: none;
+    width: 90%;
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
     border-radius: 1rem;
   }
@@ -58,6 +66,7 @@ body{
   }
   .text-primary {
     color: #4650dd !important;
+    text-align: center;
   }
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
    
@@ -83,10 +92,13 @@ body{
       display: none;
   }
   .form-group{
-    margin-top: 3%
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
   }
   .form-group Button {
-    width : 100%
+    width : 90%;
+    margin-bottom: 3%;
   }
   .signin{
     display: flex;
@@ -98,3 +110,14 @@ body{
       text-decoration: underline!important;
       cursor: pointer;
     }
+.text-center {
+  background: #016b7a;
+  padding: '10px';
+  display: 'flex';
+  align-Items: 'center';
+  justify-Content: 'center';
+}
+.notice{
+  text-align: center;
+  padding: 0.5%;
+}

@@ -55,9 +55,15 @@ const Signup = () => {
                         {/* <h1>Welcome!!! Sign up New Account</h1> */}
                         <div className="loginform">
                             <div className="border border-dark pb-3 rounded-lg" style={{width: "100%"}}>
-                                <div className="text-center p-1 mb-2 text-light " style={{background: "#016b7a", padding: '5px'}}>
-                                    <h2>Sign Up</h2>
-                                    <h4>Its Quick and Easy</h4>
+                                <div className="text-center p-1 mb-2 text-light " >
+                                <div className="notice">
+                                        <div>
+                                            <h2>Sign In</h2>
+                                        </div>
+                                        <div>
+                                            <h4>Its Quick and Easy</h4>
+                                        </div>
+                                        </div>
                                 </div>
                                 <form id="logf">
                                 <div className="form-group ml-3 mr-1">
