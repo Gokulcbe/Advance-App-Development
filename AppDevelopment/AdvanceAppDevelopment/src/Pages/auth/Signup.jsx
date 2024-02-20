@@ -26,16 +26,16 @@ const Signup = () => {
         event.preventDefault();
       };
     return (
-        <>
+        <div className="container" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', alignContent: 'center',minHeight: '100lvh', minWidth: '100lvw'}}>
         <video className="video-bg" autoPlay loop muted>
             <source src="/src/assets/Videos/videoplayback.webm" type="video/mp4" />
         </video>
-        <div style={{marginTop: '0%'}}>
+        <div >
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 1 }}>
       {/* Specify the grid item size for different screen sizes */}
                 <Grid item xs={12} sm={6} style={{minWidth: '300px'}}>
                     {/* <div>Hello</div> */}
-                    <img style={{height: '100%', width: '100%'}} src="/src/assets/Images/boat2.jpg" alt="Description of the image" />
+                    <img style={{height: '100%', width: '100%'}} src="/src/assets/Images/signupboat.jpg" alt="Description of the image" />
                 </Grid>
                 <Grid item xs={12} sm={6} style={{minWidth: '300px'}}>
                     {/* <Item> */}
@@ -65,8 +65,8 @@ const Signup = () => {
                                         </div>
                                         </div>
                                 </div>
-                                <form id="logf">
-                                <div className="form-group ml-3 mr-1">
+                                <form id="logf" >
+                                <div className="form-group ml-3 mr-1" >
                                     <TextField
                                         required
                                         id="outlined-required"
@@ -171,7 +171,7 @@ const Signup = () => {
                 </Grid>
             </Grid>
         </div>
-        </>
+        </div>
     )
 }
 

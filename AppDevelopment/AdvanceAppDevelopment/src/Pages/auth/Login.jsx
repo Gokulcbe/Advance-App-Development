@@ -21,7 +21,7 @@ function Login() {
         event.preventDefault();
       };
     return (
-        <div className="container">
+        <div className="container" style={{display: 'flex', alignItems: 'center', justifyContent: 'center', alignContent: 'center',minHeight: '100lvh'}}>
         <video className="video-bg" autoPlay loop muted>
             <source src="/src/assets/Videos/videoplayback.webm" type="video/mp4" />
         </video>

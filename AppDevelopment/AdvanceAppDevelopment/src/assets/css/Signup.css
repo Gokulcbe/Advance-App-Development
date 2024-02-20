@@ -27,7 +27,8 @@ body{
   align-items: 'center';
   justify-content: 'center';
   align-content: 'center';
-  min-height: '100vh';
+  min-height: '100lvh';
+  min-width: '100lvw';
 }
 .card-header:first-child {
     border-radius: calc(1rem - 1px) calc(1rem - 1px) 0 0;
@@ -50,12 +51,18 @@ body{
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #d6c4c4;
+    /* background-color: #d6c4c4; */
+    background-color: rgba(255,255,255,0.0);
     background-clip: border-box;
     border: none;
-    width: 90%;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgb(10 10 20 / 45%);
+    transition: transform 0.3s ease-in-out;
     border-radius: 1rem;
+  }
+  .card:hover{
+    box-shadow: 0 0.5rem 1rem rgba(46, 41, 41, 0.85);
+    transform: scale(1.02);
   }
 
   .bg-gray-100 {
