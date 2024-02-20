@@ -2,9 +2,12 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Login from './Pages/Login/Login'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+// import Login from './Pages/Login/Login'
 import Signup from './Pages/Signup/Signup'
+import { lazy } from 'react'
+import LazyLayout from './Components/LazyLayout'
+const LazyLogin = lazy(()=> import("./Pages/Login/Login"))
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -13,7 +16,8 @@ function App() {
     <BrowserRouter>
     <div className='App'>
       <Routes>
-        <Route path='/' element={<Login/>}></Route>
+        {/* <Route path='/' element={<Login/>}></Route> */}
+        <Route path="/" element={<LazyLayout component={LazyLogin}/>}/>
         <Route path='/signup' element={<Signup/>}></Route>
       </Routes>
     </div>
